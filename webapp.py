@@ -22,8 +22,8 @@ def detect_faces(our_image):
         print(id, uncertainty)
 
         if (uncertainty< 53):
-            if (id == 1 or id == 3 or id == 5):
-                name = "Nachiketa"
+            if (id == 1.1 or id == 1.2 or id == 1.3):
+                name = "Arnav"
                 cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (0, 0, 255))
         else:
             cv2.putText(img, 'Unknown', (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (0, 0, 255))
